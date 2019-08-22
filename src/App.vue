@@ -6,8 +6,7 @@
   </body>
 </template>
 
-<style lang="scss">
-@import './assets/css/main.css';
+<style>
 /*******************
  Box Sizing
  *******************/
@@ -125,9 +124,9 @@ noscript {
   margin-top: 1em;
 }
 
-
+@import './assets/css/main.css';
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

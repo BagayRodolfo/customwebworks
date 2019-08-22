@@ -1,12 +1,12 @@
-.c-one {
-  color: #f3f3f3;
+.c-main {
+  color: var(--theme-one-main);
 }
-.c-two {
-  color: hsla(0,0%,81%,.631);
+.c-sub {
+  color: var(--theme-one-light);
 }
-.c-three {
-  color: #1b7dd8;
+.c-ther {
+  color: var(--theme-one-ther);
 }
 .c-default {
-  color: #2c3e50;
+  color: var(--theme-one-black);
 }

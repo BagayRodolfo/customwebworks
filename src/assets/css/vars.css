@@ -1,0 +1,7 @@
+:root {
+  --theme-one-main: #FF577A;
+  --theme-one-light: #F9D775;
+  --theme-one-ther: #FD7779;
+  --theme-one-black: #2c3e50;
+  --gradient: linear-gradient(to right, var(--theme-one-main), var(--theme-one-light));
+}
