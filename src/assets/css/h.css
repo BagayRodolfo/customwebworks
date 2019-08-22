@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+h1 {
+  font-size: calc((100vw / 36) + 56px);
+}
+h2 {
+  font-size: calc((100vw / 36) + 42px);
+}
+h3 {
+  font-size: calc((100vw / 36) + 32px);
+}
+h4 {
+  font-size: calc((100vw / 42) + 24px);
+}
+h5 {
+  font-size: calc((100vw / 80) + 20px);
+}
+h6 {
+  font-size: calc((100vw / 120) + 20px);
+}
