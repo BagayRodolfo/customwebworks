@@ -55,6 +55,12 @@ animation-delay: 1.3s;
 .scroll-fade-in.fade-6 {
 animation-delay: 1.5s;
 }
+.scroll-fade-in.fade-7 {
+animation-delay: 1.7s;
+}
+.scroll-fade-in.fade-8 {
+animation-delay: 1.9s;
+}
 .scroll-fade-opacity {
 opacity: 0;
 }
