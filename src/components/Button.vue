@@ -25,12 +25,19 @@ export default {
 </script>
 
 <style scoped>
+
 button {
   border-radius: 50px;
   border: 0px black solid;
   width: 200px;
   color: #fff;
   font-weight: bolder;
+  animation-name: out;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+}
+button:hover {
+  animation-name: in;
 }
 .solid.gradient {
   background: var(--gradient);

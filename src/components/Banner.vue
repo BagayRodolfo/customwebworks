@@ -1,15 +1,16 @@
 <template>
   <Container cls="flex v-center">
     <div class="b-con">
-      <div class="b-text">
-        <h5 class="fw-lg scroll-fade-opacity">Delivering</h5>
-        <h5 class="fw-lg c-main scroll-fade-opacity fade-5">Competative</h5>
+      <div class="b-text scroll-fade-opacity">
+        <h5 class="fw-lg">Delivering</h5>
+        <h5 class="fw-lg c-main scroll-fade-opacity bounce-in fade-5">Competative</h5>
         <div class="b-ln">
-          <h5 class="fw-lg c-ther scroll-fade-opacity fade-8">Custom&nbsp;</h5>
-          <h5 class="fw-lg scroll-fade-opacity">Web Pages</h5>
+          <h5 class="fw-lg c-ther scroll-fade-opacity bounce-in fade-8">Custom&nbsp;</h5>
+          <h5 class="fw-lg">Web Pages</h5>
         </div>
         <p>Integer ornare varius hendrerit. Nullam enim augue, rutrum sed elit sed, pharetra fermentum neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         <VButton
+          class="b-button"
           type="solid"
           gradient="gradient"
           :func="() => {console.log('test')}"
@@ -45,7 +46,10 @@ export default {
   flex-direction: column;
   flex: 1 0 49%;
   margin-right:2%;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+.b-text p {
+  /* text-indent: 5%; */
 }
 .b-img {
   flex: 1 0 49%
@@ -58,5 +62,8 @@ export default {
 .b-ln h5 {
   width: auto;
   /* padding-right: 15px; */
+}
+.b-button {
+  margin-top: 20px;
 }
 </style>

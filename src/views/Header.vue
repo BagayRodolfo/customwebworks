@@ -73,14 +73,14 @@ header {
   flex-direction: row;
 }
 .h-left, .h-right {
-  display: inherit;
   flex: 1 0 50%;
 }
 .h-left {
+  display: inherit;
   justify-content: left;
 }
 .h-right {
-  justify-content: right;
+  display: none;
 }
 .l-img {
   min-height: 60px;
@@ -115,8 +115,27 @@ header {
 }
 .m-text {
   text-align: center;
+  animation-name: out;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
 }
 .m-text:hover {
+  animation-name: in;
   color: var(--theme-one-main);
+}
+@media (min-width: 576px)  {
+
+}
+@media (min-width: 768px)  {
+
+}
+@media (min-width: 992px)  {
+  .h-right {
+    display: inherit;
+    justify-content: right;
+  }
+}
+@media (min-width: 1200px) {
+
 }
 </style>

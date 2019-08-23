@@ -30,7 +30,7 @@ export default {
   min-height: 100vh;
   background: url(../assets/Group.png);
   background-position: center;
-  background-size: contain;
+  /* background-size: contain; */
   /* background-repeat: no-repeat; */
 }
 .flex {
