@@ -8,5 +8,5 @@
 @import './anim.css';
 
 p {
-  font-size: calc((100vw / 950) + 16px);
+  font-size: calc((100vw / 800) + 12px);
 }

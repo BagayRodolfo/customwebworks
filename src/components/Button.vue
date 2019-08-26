@@ -12,7 +12,7 @@ export default {
   computed: {
     cls () {
       let cl = ''
-      if (this.gradient) {
+      if (this.gradient == "gradient") {
         cl += 'gradient'
       } else {
         cl += 'clear'

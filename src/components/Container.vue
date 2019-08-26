@@ -1,5 +1,5 @@
 <template>
-  <div class="c-bg" :style="bg ? `background: url(${bg})` : ''" :class="cls">
+  <div class="c-bg" :style="bg | hasBackground" :class="cls">
     <Wrapper >
       <slot></slot>
     </Wrapper>
@@ -20,6 +20,11 @@ export default {
     return {
       bg: require(`../assets/${this.background}.png`)
     }
+  },
+  filters: {
+    hasBackground (v) {
+      return v ? `background: url(${v})` : ''
+    }
   }
 }
 </script>
@@ -28,10 +33,11 @@ export default {
 .c-bg {
   width: 100%;
   min-height: 100vh;
-  background: url(../assets/Group.png);
-  background-position: center;
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
+  /* background: url(../assets/Circles.png); */
+  animation-name: bgAnimate;
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .flex {
   display: flex;
@@ -44,5 +50,13 @@ export default {
 }
 .v-end {
   align-items: flex-end;
+}
+@keyframes bgAnimate {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 2000px;
+  }
 }
 </style>

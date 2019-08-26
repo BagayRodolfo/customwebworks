@@ -57,9 +57,10 @@ export default {
 <style scoped>
 header {
   /* box-shadow: 4px 4px 25px rgba(0,0,0,0.1); */
-  background: transparent;
+  background: var(--theme-one-white);
   position: fixed;
   width: 100%;
+  z-index: 999;;
 }
 .h-con {
   display: flex;

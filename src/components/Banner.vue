@@ -1,5 +1,5 @@
 <template>
-  <Container cls="flex v-center">
+  <Container cls="flex v-center" background="Circles">
     <div class="b-con">
       <div class="b-text scroll-fade-opacity">
         <h5 class="fw-lg">Delivering</h5>
@@ -17,7 +17,7 @@
         >Contact Us</VButton>
       </div>
       <div class="b-img">
-
+        <div class="b-acimg"></div>
       </div>
     </div>
   </Container>
@@ -49,7 +49,7 @@ export default {
   /* overflow: hidden; */
 }
 .b-text p {
-  /* text-indent: 5%; */
+  text-indent: 5%;
 }
 .b-img {
   flex: 1 0 49%
@@ -65,5 +65,20 @@ export default {
 }
 .b-button {
   margin-top: 20px;
+}
+.b-img {
+  display: inherit;
+  justify-content: center;
+  align-content: center;
+}
+.b-acimg {
+  min-height: calc(100vw / 2.8);
+  width: calc(100vw / 2.8);
+  background-blend-mode: lighten;
+  background-image: url('../assets/bannerImage.png');
+  background-position: center;
+  background-size: contain;
+  border: 0px #fff solid;
+  border-radius: 600px;
 }
 </style>

@@ -3,5 +3,7 @@
   --theme-one-light: #F9D775;
   --theme-one-ther: #FD7779;
   --theme-one-black: #2c3e50;
+  --theme-one-white: #fff;
   --gradient: linear-gradient(to right, var(--theme-one-main), var(--theme-one-light));
+  --gradient-opacity: linear-gradient(45deg, 	rgba(255, 87, 122,0.45), 	rgba(249, 215, 117,0.45));
 }
