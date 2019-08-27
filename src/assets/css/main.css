@@ -3,10 +3,7 @@
 @import './als.css';
 @import './c.css';
 @import './fw.css';
+@import './p.css';
 
 @import './haz.css';
 @import './anim.css';
-
-p {
-  font-size: calc((100vw / 800) + 12px);
-}

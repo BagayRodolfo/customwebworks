@@ -9,7 +9,7 @@
           <li v-for="(item, index) in list" :key="index" class="l-item">
             <div class="l-icon" :style="item.icon | hasBackground"></div>
             <h6>{{item.title}}</h6>
-            <p>{{item.text}}</p>
+            <p class="p-md">{{item.text}}</p>
           </li>
         </ul>
       </div>
@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .b-con {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   height: inherit;
 }
@@ -72,6 +72,14 @@ export default {
   justify-content: center;
   align-content: center;
 }
+.b-list {
+  float: left;
+  position: relative;
+}
+.b-list li{
+  float: left;
+  position: relative;
+}
 .l-icon {
   width: 80px;
   height: 80px;
@@ -82,13 +90,34 @@ export default {
   margin: 10px 0px;
 }
 .b-acimg {
-  min-height: calc(100vw / 2.8);
-  width: calc(100vw / 2.8);
+  min-height: calc(100vw / 1.1);
+  width: calc(100vw / 1.1);
   background-blend-mode: lighten;
   background-image: url('../assets/bannerImagePerks.png');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   border: 0px #fff solid;
-  border-radius: 600px;
+}
+@media (min-width: 576px)  {
+
+}
+@media (min-width: 768px)  {
+  .b-con {
+    flex-direction: row;
+  }
+  .b-acimg {
+    min-height: calc(100vw / 2.2);
+    width: 100%;
+  }
+}
+@media (min-width: 992px)  {
+  .b-acimg {
+    min-height: calc(100vw / 3);
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+
 }
 </style>

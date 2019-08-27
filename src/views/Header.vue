@@ -113,6 +113,7 @@ header {
   display: inherit;
   flex: 1 0 10%;
   align-items: center;
+  justify-content: flex-end;
 }
 .m-text {
   text-align: center;

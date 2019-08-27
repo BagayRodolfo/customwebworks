@@ -3,6 +3,7 @@
     <Banner></Banner>
     <Features></Features>
     <Alert
+      class="home-alert"
       :css="alertStyle"
     ></Alert>
   </div>
@@ -13,7 +14,7 @@ import Alert from '../components/Alert.vue'
 import Banner from '../components/Banner.vue'
 import Features from '../components/Features.vue'
 export default {
-  data() {
+  data () {
     return {
       alertStyle: {
         position: 'absolute',
@@ -32,7 +33,24 @@ export default {
 </script>
 
 <style>
-  .main-com-container {
-    padding-top: 100px;
+.main-com-container {
+  padding-top: 100px;
+}
+.home-alert{
+  display: none!important;
+}
+@media (min-width: 576px)  {
+
+}
+@media (min-width: 768px)  {
+
+}
+@media (min-width: 992px)  {
+  .home-alert{
+    display: flex!important;
   }
+}
+@media (min-width: 1200px) {
+
+}
 </style>

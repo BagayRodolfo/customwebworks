@@ -8,7 +8,7 @@
           <h5 class="fw-lg c-ther scroll-fade-opacity bounce-in fade-8">Custom&nbsp;</h5>
           <h5 class="fw-lg">Web Pages</h5>
         </div>
-        <p>Integer ornare varius hendrerit. Nullam enim augue, rutrum sed elit sed, pharetra fermentum neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p class="p-xl">Integer ornare varius hendrerit. Nullam enim augue, rutrum sed elit sed, pharetra fermentum neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         <VButton
           class="b-button"
           type="solid"
@@ -37,7 +37,7 @@ export default {
 <style scoped>
 .b-con {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   height: inherit;
 }
@@ -72,13 +72,34 @@ export default {
   align-content: center;
 }
 .b-acimg {
-  min-height: calc(100vw / 2.8);
-  width: calc(100vw / 2.8);
+  min-height: calc(100vw / 1.1);
+  width: calc(100vw / 1.1);
   background-blend-mode: lighten;
   background-image: url('../assets/bannerImage.png');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   border: 0px #fff solid;
-  border-radius: 600px;
+}
+@media (min-width: 576px)  {
+
+}
+@media (min-width: 768px)  {
+  .b-con {
+    flex-direction: row;
+  }
+  .b-acimg {
+    min-height: calc(100vw / 2.2);
+    width: 100%;
+  }
+}
+@media (min-width: 992px)  {
+  .b-acimg {
+    min-height: calc(100vw / 3);
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+
 }
 </style>
