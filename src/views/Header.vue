@@ -65,8 +65,8 @@ header {
 .h-con {
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 100px;
+  width: var(--header-x);
+  height: var(--header-y);
 }
 .h-bar {
   width: 100%;

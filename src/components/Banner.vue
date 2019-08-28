@@ -1,5 +1,5 @@
 <template>
-  <Container cls="flex v-center" background="Circles">
+  <Container class="flex v-center" background="Circles">
     <div class="b-con">
       <div class="b-text scroll-fade-opacity">
         <h5 class="fw-lg">Delivering</h5>

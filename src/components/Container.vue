@@ -1,5 +1,5 @@
 <template>
-  <div class="c-bg" :style="bg | hasBackground" :class="cls">
+  <div class="c-bg" :style="bg | hasBackground">
     <Wrapper >
       <slot></slot>
     </Wrapper>
@@ -13,8 +13,7 @@ export default {
     Wrapper
   },
   props: [
-    'background',
-    'cls'
+    'background'
   ],
   data () {
     return {
@@ -31,25 +30,13 @@ export default {
 
 <style scoped>
 .c-bg {
-  width: 100%;
-  min-height: 100vh;
+  width: var(--container-x);
+  min-height: var(--container-y);
   /* background: url(../assets/Circles.png); */
   animation-name: bgAnimate;
   animation-duration: 300s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-.flex {
-  display: flex;
-}
-.v-center {
-  align-items: center;
-}
-.v-start {
-  align-items: flex-start;
-}
-.v-end {
-  align-items: flex-end;
 }
 @keyframes bgAnimate {
   0% {

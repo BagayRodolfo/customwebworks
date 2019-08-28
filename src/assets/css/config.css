@@ -1,0 +1,10 @@
+:root {
+  --header-y: 100px;
+  --header-x: 100%;
+
+  --container-y: 100vh;
+  --container-x: 100%;
+
+  --container-bar-y: 30vh;
+  --container-bar-x: 100%;
+}

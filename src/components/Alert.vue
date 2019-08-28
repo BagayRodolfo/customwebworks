@@ -31,45 +31,45 @@ export default {
       for (let k in v) {
         r += `${k}: ${v[k]}; `
       }
-      return r;
+      return r
     }
   }
 }
 </script>
 <style scoped>
-  .a-con {
-    width: 350px;
-    padding: 15px;
-    background: var(--gradient);
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    opacity: 0;
-  }
-  .a-shadow {
-    box-shadow: 4px 4px 10px 2px rgba(0,0,0,0.3)
-  }
-  .a-bot {
-    padding: 0px 10px;
-  }
-  .a-bot h6 {
-    color: var(--theme-one-white);
-    margin-bottom: 10px;
-  }
-  .a-bot p {
-    color: var(--theme-one-white);
-    margin-bottom: 10px;
-  }
-  .a-top {
-    display: inherit;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .a-close {
-    color: var(--theme-one-white);
-  }
-  .a-button {
-    border: 2.5px var(--theme-one-white) solid!important;
-    width: 100%;
-  }
+.a-con {
+  width: 350px;
+  padding: 15px;
+  background: var(--gradient);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  opacity: 0;
+}
+.a-shadow {
+  box-shadow: 4px 4px 10px 2px rgba(0,0,0,0.3)
+}
+.a-bot {
+  padding: 0px 10px;
+}
+.a-bot h6 {
+  color: var(--theme-one-white);
+  margin-bottom: 10px;
+}
+.a-bot p {
+  color: var(--theme-one-white);
+  margin-bottom: 10px;
+}
+.a-top {
+  display: inherit;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.a-close {
+  color: var(--theme-one-white);
+}
+.a-button {
+  border: 2.5px var(--theme-one-white) solid!important;
+  width: 100%;
+}
 </style>

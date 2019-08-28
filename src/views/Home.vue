@@ -6,6 +6,7 @@
       class="home-alert"
       :css="alertStyle"
     ></Alert>
+    <TalkToUsBar></TalkToUsBar>
   </div>
 </template>
 
@@ -13,6 +14,7 @@
 import Alert from '../components/Alert.vue'
 import Banner from '../components/Banner.vue'
 import Features from '../components/Features.vue'
+import TalkToUsBar from '../components/TalkToUsBar.vue'
 export default {
   data () {
     return {
@@ -27,7 +29,8 @@ export default {
   components: {
     Banner,
     Features,
-    Alert
+    Alert,
+    TalkToUsBar
   }
 }
 </script>

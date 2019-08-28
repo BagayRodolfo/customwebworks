@@ -5,5 +5,4 @@
   --theme-one-black: #3f3f3f;
   --theme-one-white: #fff;
   --gradient: linear-gradient(to right, var(--theme-one-main), var(--theme-one-light));
-  --gradient-opacity: linear-gradient(45deg, 	rgba(255, 87, 122,0.45), 	rgba(249, 215, 117,0.45));
 }

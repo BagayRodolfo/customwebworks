@@ -1,9 +1,11 @@
 @import './vars.css';
+@import './config.css';
 @import './h.css';
 @import './als.css';
 @import './c.css';
 @import './fw.css';
 @import './p.css';
+@import './flex.css';
 
 @import './haz.css';
 @import './anim.css';

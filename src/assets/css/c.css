@@ -7,6 +7,9 @@
 .c-ther {
   color: var(--theme-one-ther);
 }
+.c-white {
+  color: var(--theme-one-white);
+}
 .c-default {
   color: var(--theme-one-black);
 }

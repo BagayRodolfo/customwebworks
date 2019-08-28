@@ -1,5 +1,5 @@
 <template>
-  <Container cls="flex v-center">
+  <Container class="flex v-center">
     <div class="b-con">
       <div class="b-img">
         <div class="b-acimg"></div>
