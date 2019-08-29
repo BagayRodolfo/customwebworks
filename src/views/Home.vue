@@ -1,6 +1,7 @@
 <template>
   <div class="main-com-container">
     <Banner></Banner>
+    <Benefits></Benefits>
     <Features></Features>
     <Alert
       class="home-alert"
@@ -15,12 +16,13 @@ import Alert from '../components/Alert.vue'
 import Banner from '../components/Banner.vue'
 import Features from '../components/Features.vue'
 import TalkToUsBar from '../components/TalkToUsBar.vue'
+import Benefits from '../components/Benefits.vue'
 export default {
   data () {
     return {
       alertStyle: {
         position: 'absolute',
-        top: 'calc(100vh - 100px)',
+        top: 'calc(120vh - 100px)',
         right: 'calc(100vw / 10)',
         opacity: '1'
       }
@@ -30,6 +32,7 @@ export default {
     Banner,
     Features,
     Alert,
+    Benefits,
     TalkToUsBar
   }
 }
