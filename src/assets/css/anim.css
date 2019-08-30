@@ -148,3 +148,43 @@
 .scroll-fade-opacity {
   opacity: 0;
 }
+
+
+.hover-anim.flip-anim {
+  transition-property: transform;
+  transition-duration: 1s;
+  box-shadow: 4px 4px 10px 2px rgba(0,0,0,0.1);
+}
+.flip-anim.horizontal:hover {
+  transform: rotateY(180deg);
+}
+.flip-anim.horizontal .sub-content {
+  transform: rotateY(180deg);
+}
+.flip-anim.vertical:hover {
+  transform: rotateX(180deg);
+}
+.flip-anim.vertical .sub-content {
+  transform: rotateX(180deg);
+}
+.flip-anim .main-content, .flip-anim .sub-content {
+  position: absolute;
+}
+.flip-anim .main-content {
+  transition-property: opacity;
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  opacity: 1;
+}
+.flip-anim:hover .main-content{
+  opacity: 0;
+}
+.flip-anim .sub-content {
+  transition-property: opacity;
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  opacity: 0;
+}
+.flip-anim:hover .sub-content{
+  opacity: 1;
+}

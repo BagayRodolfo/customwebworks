@@ -36,8 +36,8 @@ export default {
   min-height: var(--container-bar-y);
 }
 .cb-con.auto-size {
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .cb-con.clear {
   background-color: var(--theme-one-white);
