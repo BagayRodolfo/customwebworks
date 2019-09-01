@@ -1,24 +1,36 @@
 <template>
-  <div class="a-con a-shadow" :style="css | toCss">
-    <div class="a-top">
-      <div class="a-close">
-        X
+  <transition name="fade">
+    <div v-if="isShow" class="a-con a-shadow" :style="css | toCss">
+      <div class="a-top">
+        <div @click="toggleShow" class="a-close">
+          X
+        </div>
       </div>
+      <div class="a-bot">
+        <h6>Stylic</h6>
+        <p>Sit irure consequat aliquip labore esse officia enim exercitation magna excepteur occaecat reprehenderit. Proident deserunt esse irure laborum laboris do sunt adipisicing fugiat consectetur do. Sint officia culpa ut nostrud cupidatat tempor ut ipsum.</p>
+      </div>
+      <VButton
+        class="a-button"
+        type="border"
+        :func="() => {console.log('test')}">
+      Read More</VButton>
     </div>
-    <div class="a-bot">
-      <h6>Stylic</h6>
-      <p>Sit irure consequat aliquip labore esse officia enim exercitation magna excepteur occaecat reprehenderit. Proident deserunt esse irure laborum laboris do sunt adipisicing fugiat consectetur do. Sint officia culpa ut nostrud cupidatat tempor ut ipsum.</p>
-    </div>
-    <VButton
-      class="a-button"
-      type="border"
-      :func="() => {console.log('test')}">
-    Read More</VButton>
-  </div>
+  </transition>
 </template>
 <script>
 import VButton from './Button.vue'
 export default {
+  data() {
+    return {
+      isShow: true
+    }
+  },
+  methods: {
+    toggleShow() {
+      this.isShow = !this.isShow;
+    }
+  },
   props: [
     'css'
   ],
@@ -44,7 +56,6 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  opacity: 0;
 }
 .a-shadow {
   box-shadow: 4px 4px 10px 2px rgba(0,0,0,0.3)
@@ -72,4 +83,13 @@ export default {
   border: 2.5px var(--theme-one-white) solid!important;
   width: 100%;
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.5s;
+}
+.fade-leave-active {
+  opacity: 0; 
+  transform: translateX(200px);
+}
+
 </style>

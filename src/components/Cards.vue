@@ -1,6 +1,8 @@
 <template>
-  <div class="c-con a-shadow" :class="procSize(width , height)">
-    <slot></slot>
+  <div>
+    <div class="t-anim c-con a-shadow" :class="procSize(width , height)">
+      <slot></slot>
+    </div>
   </div>
 </template>
 

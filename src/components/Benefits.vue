@@ -66,15 +66,15 @@ export default {
 
 }
 @media (min-width: 768px)  {
-
-}
-@media (min-width: 992px)  {
   .c-con {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
   }
+}
+@media (min-width: 992px)  {
+  
 }
 @media (min-width: 1200px) {
 

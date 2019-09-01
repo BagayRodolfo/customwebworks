@@ -23,8 +23,7 @@ export default {
       alertStyle: {
         position: 'absolute',
         top: 'calc(120vh - 100px)',
-        right: 'calc(100vw / 10)',
-        opacity: '1'
+        right: 'calc(100vw / 10)'
       }
     }
   },

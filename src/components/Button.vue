@@ -32,12 +32,10 @@ button {
   width: 200px;
   color: #fff;
   font-weight: bolder;
-  animation-name: out;
-  animation-duration:1s;
-  animation-fill-mode: forwards;
+  transition: transform 1s;
 }
 button:hover {
-  animation-name: in;
+  transform: scale(1.05, 1.05);
 }
 .solid.gradient {
   background: var(--gradient);
