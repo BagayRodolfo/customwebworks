@@ -8,7 +8,7 @@
       </div>
       <div class="a-bot">
         <h6>Stylic</h6>
-        <p>Sit irure consequat aliquip labore esse officia enim exercitation magna excepteur occaecat reprehenderit. Proident deserunt esse irure laborum laboris do sunt adipisicing fugiat consectetur do. Sint officia culpa ut nostrud cupidatat tempor ut ipsum.</p>
+        <p class="p-sm">Sit irure consequat aliquip labore esse officia enim exercitation magna excepteur occaecat reprehenderit. Proident deserunt esse irure laborum laboris do sunt adipisicing fugiat consectetur do. Sint officia culpa ut nostrud cupidatat tempor ut ipsum.</p>
       </div>
       <VButton
         class="a-button"
@@ -21,14 +21,14 @@
 <script>
 import VButton from './Button.vue'
 export default {
-  data() {
+  data () {
     return {
       isShow: true
     }
   },
   methods: {
-    toggleShow() {
-      this.isShow = !this.isShow;
+    toggleShow () {
+      this.isShow = !this.isShow
     }
   },
   props: [
@@ -88,7 +88,7 @@ export default {
   transition: all 0.5s;
 }
 .fade-leave-active {
-  opacity: 0; 
+  opacity: 0;
   transform: translateX(200px);
 }
 

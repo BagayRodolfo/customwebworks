@@ -8,6 +8,18 @@
       :css="alertStyle"
     ></Alert>
     <TalkToUsBar></TalkToUsBar>
+    <Tabs
+      selection="tabone"
+    >
+      <template slot="tabone">
+        <h4>Test Tab 1</h4>
+        <p class="p-md">Fugiat mollit aute exercitation dolor voluptate voluptate id pariatur ex magna. Occaecat minim mollit aliqua et et mollit cillum non deserunt aliquip. Officia veniam nisi sint cupidatat magna duis velit nulla eiusmod. Id Lorem deserunt reprehenderit anim in ipsum dolore duis. Magna proident aute consectetur adipisicing sint eu magna. Dolor exercitation culpa consequat sunt ullamco laborum occaecat adipisicing sunt enim commodo anim reprehenderit. Qui laborum aliqua excepteur veniam adipisicing qui.</p>
+      </template>
+      <template slot="tabtwo">
+        <h4>Test tab 2</h4>
+        <p class="p-md">Occaecat sunt excepteur voluptate excepteur irure exercitation aliqua qui excepteur dolore esse. Ex voluptate ullamco cillum laborum quis exercitation incididunt tempor eiusmod Lorem consectetur culpa commodo et. Ut deserunt voluptate aliquip et esse minim. Aliqua quis aliquip ullamco exercitation mollit excepteur aute est est. Consequat excepteur tempor non amet quis ullamco adipisicing in duis. Exercitation do ad incididunt voluptate laborum veniam do dolore consequat fugiat excepteur.</p>
+      </template>
+    </Tabs>
   </div>
 </template>
 
@@ -17,6 +29,7 @@ import Banner from '../components/Banner.vue'
 import Features from '../components/Features.vue'
 import TalkToUsBar from '../components/TalkToUsBar.vue'
 import Benefits from '../components/Benefits.vue'
+import Tabs from '../components/Tabs.vue'
 export default {
   data () {
     return {
@@ -32,7 +45,8 @@ export default {
     Features,
     Alert,
     Benefits,
-    TalkToUsBar
+    TalkToUsBar,
+    Tabs
   }
 }
 </script>

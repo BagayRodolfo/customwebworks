@@ -11,25 +11,45 @@
       height="sm"
     >
       <div class="c-content main-content">
-        <h6>main</h6>
-        <p>Ex esse commodo aliqua eiusmod. Adipisicing laborum dolore magna do magna. Aute voluptate irure officia aute magna ipsum anim laboris nisi nulla aliqua duis aliqua. Irure nisi officia consectetur laboris officia minim tempor ut consequat. Proident eu et et sint veniam sunt fugiat voluptate aute consequat minim amet aliquip non. Nostrud fugiat proident ad do do aliquip dolor labore cillum aliquip elit. Qui ipsum id id qui nisi occaecat quis do excepteur.</p>
+        <h4 class="c-main">Premium</h4>
+        <h6>pre·​mi·​um</h6>  
+        <p class="p-sm">An exceptional quality or amount also : higher-priced</p>
       </div>
       <div class="c-content sub-content">
-        <h6>sub</h6>
-        <h6>Test Lorem Ipsum</h6>
+        <h4 class="c-main">Stylus</h4>
+        <h6>sty·​lus</h6>
+        <p class="p-sm">A pen-shaped pointing device used for entering data (such as positional information from a graphics tablet) into a computer</p>
       </div>
     </Cards>
     <Cards
       class="b-cards hover-anim flip-anim horizontal"
       height="sm"
     >
-
+      <div class="c-content main-content">
+        <h4 class="c-main">Template</h4>
+        <h6>tem·​plate</h6>
+        <p class="p-sm">A gauge, pattern, or mold (such as a thin plate or board) used as a guide to the form of a piece being made</p>
+      </div>
+      <div class="c-content sub-content">
+        <h4 class="c-main">Random</h4>
+        <h6>ran·​dom</h6>
+        <p class="p-sm">Without definite aim, direction, rule, or method</p>
+      </div>
     </Cards>
     <Cards
       class="b-cards hover-anim flip-anim horizontal"
       height="sm"
     >
-
+      <div class="c-content main-content">
+        <h4 class="c-main">Random</h4>
+        <h6>ran·​dom</h6>
+        <p class="p-sm">Without definite aim, direction, rule, or method</p>
+      </div>
+      <div class="c-content sub-content">
+        <h4 class="c-main">Premium</h4>
+        <h6>pre·​mi·​um</h6>  
+        <p class="p-sm">An exceptional quality or amount also : higher-priced</p>
+      </div>
     </Cards>
   </div>
   </ContainerBar>
@@ -57,7 +77,12 @@ export default {
   margin-bottom: 20px;
 }
 .c-content {
-  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  width: 100%;
+  min-height: 100%;
 }
 .c-content h6 {
   padding-bottom: 30px;

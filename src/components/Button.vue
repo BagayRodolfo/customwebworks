@@ -4,15 +4,24 @@
 
 <script>
 export default {
-  props: [
-    'func',
-    'type',
-    'gradient'
-  ],
+  props: {
+    func: {
+      type: Function,
+      default: () => {}
+    },
+    'type': {
+      type: String,
+      default: 'solid'
+    },
+    gradient: {
+      type: String,
+      default: 'gradient'
+    }
+  },
   computed: {
     cls () {
       let cl = ''
-      if (this.gradient == "gradient") {
+      if (this.gradient === 'gradient') {
         cl += 'gradient'
       } else {
         cl += 'clear'

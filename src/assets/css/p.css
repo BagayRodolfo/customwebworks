@@ -7,6 +7,11 @@ p.p-sm {
 p.p-md {
   font-size: 16px;
 }
-p.p-xl {
+p.p-lg {
   font-size: 18px;
+}
+
+p .p-em {
+  font-weight: bold;
+  color: var(--theme-one-main);
 }
