@@ -1,12 +1,16 @@
 <template>
   <div>
-    <div class="t-anim c-con a-shadow" :class="procSize(width , height)">
+    <div class="t-anim c-con a-shadow" :class="processSettings()">
+      <!-- @slot Any content -->
       <slot></slot>
     </div>
   </div>
 </template>
 
 <script>
+/**
+ * @version 1.0.1
+ */
 export default {
   data () {
     return {
@@ -14,31 +18,56 @@ export default {
     }
   },
   props: {
+    /**
+     * Pre-set height of the card.<br>
+     * Options: sm, md, lg
+     */
     height: {
       type: String,
       default: 'auto'
     },
+    /**
+     * Pre-set width of the card.<br>
+     * Options: xs, sm, md, lg, xl
+     */
     width: {
       type: String,
       default: 'sm'
+    },
+    /**
+     * Padding inside the card.<br>
+     * Options: xs, sm, md, lg, xl<br>
+     * Pattern: <horizontal-padding>-<vertical-padding>
+     */
+    pad: {
+      type: String,
+      default: 'sm-sm'
     }
   },
   methods: {
-    procSize (w, h) {
-      return [this.filterWidth(w), this.filterHeight(h)].join(' ')
+    /**
+     * Success event.
+     *
+     * @type {object}
+     */
+    processSettings () {
+      return [
+        this.getWidth(this.width),
+        this.getHeight(this.height),
+        ...this.getPad(this.pad)
+      ].join(' ')
     },
-    filterWidth (v) {
-      if (v) {
-        return `w-${v}`
-      }
-      return ''
+    getWidth (v) {
+      return `w-${v}`
     },
-    filterHeight (v) {
-      if (v) {
-        return `h-${v}`
-      }
-      return ''
+    getHeight (v) {
+      return `h-${v}`
+    },
+    getPad (v) {
+      const m = v.split('-')
+      return [`p-x-${m[0] || 'sm'}`, `p-y-${m[1] || 'sm'}`]
     }
+
   }
 }
 </script>
@@ -80,4 +109,31 @@ export default {
 .c-con.h-auto {
   height: auto;
 }
+
+.c-con.p-x-sm {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.c-con.p-x-md {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.c-con.p-x-lg {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.c-con.p-y-sm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.c-con.p-y-md {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.c-con.p-y-lg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 </style>

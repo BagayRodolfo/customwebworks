@@ -13,18 +13,35 @@ export default {
   data () {
     return {
       'VwithWrapper': this.withWrapper,
-      'VBackground': this.background || 'clear',
-      'Vsize': this.size || 'fix-size' // 'auto-size'
+      'VBackground': this.background,
+      'Vsize': this.size
     }
   },
   components: {
     Wrapper
   },
-  props: [
-    'withWrapper',
-    'background',
-    'size'
-  ]
+  props: {
+    /**
+     * Enable magrine wrapper.<br>
+     * Options: 'yes', true, false
+     */
+    withWrapper: {
+      type: [String, Boolean],
+      default: true
+    },
+    /**
+     * Background color based on the global colors.<br>
+     * Options: clear, dark, light, main, gradient
+     */
+    background: {
+      type: String,
+      default: 'clear'
+    },
+    size: {
+      type: String,
+      default: 'fix-size'
+    }
+  }
 }
 </script>
 

@@ -1,8 +1,8 @@
 <template>
   <div class="t-con">
     <div class="t-list">
-      <button v-for="(item, index) in list" :key="index" @click="toggleSlot(item.slot)" class="t-title" 
-        :class="VSelection === item.slot ? 'active-title' : ''" 
+      <button v-for="(item, index) in list" :key="index" @click="toggleSlot(item.slot)" class="t-title"
+        :class="VSelection === item.slot ? 'active-title' : ''"
       ><p class="p-lg">{{item.title}}</p></button>
     </div>
     <div class="t-contents">
@@ -15,21 +15,23 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      VSelection: this.selection 
+      VSelection: this.selection
     }
   },
   props: {
     list: {
       type: Array,
-      default: [{
-        slot: 'tabone',
-        title: 'Tab One'
-      }, {
-        slot: 'tabtwo',
-        title: 'Tab Two'
-      }]
+      default: () => {
+        return [{
+          slot: 'tabone',
+          title: 'Tab One'
+        }, {
+          slot: 'tabtwo',
+          title: 'Tab Two'
+        }]
+      }
     },
     selection: {
       type: String,
@@ -37,9 +39,9 @@ export default {
     }
   },
   methods: {
-    toggleSlot(v) {
-      this.VSelection = v;
-    } 
+    toggleSlot (v) {
+      this.VSelection = v
+    }
   }
 }
 </script>

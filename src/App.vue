@@ -125,13 +125,5 @@ noscript {
 }
 
 @import './assets/css/main.css';
-body {
-  font-family: 'Ubuntu';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  overflow-x: hidden;
-}
 
 </style>

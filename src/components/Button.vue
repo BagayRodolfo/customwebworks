@@ -3,19 +3,34 @@
 </template>
 
 <script>
+/**
+ * @version 1.0.1
+ */
 export default {
   props: {
+    /**
+     * Action when component is clicked.
+     */
     func: {
       type: Function,
+      required: true,
       default: () => {}
     },
-    'type': {
-      type: String,
-      default: 'solid'
-    },
+    /**
+     * Enable gradient design.<br>
+     * Options: gradient, clear
+     */
     gradient: {
       type: String,
       default: 'gradient'
+    },
+    /**
+     * Style of the button.<br>
+     * Options: solid, border
+     */
+    'typ': {
+      type: String,
+      default: 'solid'
     }
   },
   computed: {
@@ -26,7 +41,7 @@ export default {
       } else {
         cl += 'clear'
       }
-      cl += ` ${this.type}`
+      cl += ` ${this.typ}`
       return cl
     }
   }

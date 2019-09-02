@@ -1,6 +1,7 @@
 <template>
   <div class="c-bg" :style="bg | hasBackground">
     <Wrapper >
+      <!-- @slot Any content -->
       <slot></slot>
     </Wrapper>
   </div>
@@ -12,9 +13,15 @@ export default {
   components: {
     Wrapper
   },
-  props: [
-    'background'
-  ],
+  props: {
+    /**
+     * Image file. Only PNG.
+     */
+    background: {
+      type: String,
+      default: 'Circles'
+    }
+  },
   data () {
     return {
       bg: require(`../assets/${this.background}.png`)
@@ -22,6 +29,9 @@ export default {
   },
   filters: {
     hasBackground (v) {
+      if (v === 'none') {
+        return ''
+      }
       return v ? `background: url(${v})` : ''
     }
   }

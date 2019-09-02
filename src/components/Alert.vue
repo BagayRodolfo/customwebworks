@@ -20,6 +20,11 @@
 </template>
 <script>
 import VButton from './Button.vue'
+/**
+ * Imported Components
+ * @see [Button](#button)
+ * @version 1.0.1
+ */
 export default {
   data () {
     return {
@@ -27,13 +32,24 @@ export default {
     }
   },
   methods: {
+    /**
+     * Toggle the visibility of the alert
+     * @public
+     */
     toggleShow () {
       this.isShow = !this.isShow
     }
   },
-  props: [
-    'css'
-  ],
+  props: {
+    /**
+     * Any valid css in JSON format.
+     */
+    css: {
+      type: Object,
+      required: true,
+      default: () => {}
+    }
+  },
   components: {
     VButton
   },

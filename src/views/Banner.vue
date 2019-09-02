@@ -8,7 +8,7 @@
           <h5 class="fw-lg c-ther scroll-fade-opacity bounce-in fade-8">Custom&nbsp;</h5>
           <h5 class="fw-lg">Web Pages</h5>
         </div>
-        <p class="p-xl">Integer ornare varius hendrerit. Nullam enim augue, rutrum sed elit sed, pharetra fermentum neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p class="p-lg">Integer ornare varius hendrerit. Nullam enim augue, rutrum sed elit sed, pharetra fermentum neque. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         <VButton
           class="b-button"
           type="solid"
@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import Container from './Container.vue'
-import VButton from './Button.vue'
+import Container from '@/components/Container.vue'
+import VButton from '@/components/Button.vue'
 export default {
   components: {
     Container,

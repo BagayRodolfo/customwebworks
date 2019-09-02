@@ -1,5 +1,5 @@
 <template>
-  <Container class="flex v-center">
+  <Container class="flex v-center" background="none">
     <div class="b-con">
       <div class="b-img">
         <div class="b-acimg"></div>
@@ -7,9 +7,14 @@
       <div class="b-text scroll-fade-opacity">
         <ul class="b-list">
           <li v-for="(item, index) in list" :key="index" class="l-item">
-            <div class="l-icon" :style="item.icon | hasBackground"></div>
-            <h6>{{item.title}}</h6>
-            <p class="p-md">{{item.text}}</p>
+            <Cards
+              pad="lg-lg"
+            >
+              <div class="l-icon" :style="item.icon | hasBackground"></div>
+              <h6>{{item.title}}</h6>
+              <p class="p-md">{{item.text}}</p>
+            </Cards>
+
           </li>
         </ul>
       </div>
@@ -17,7 +22,8 @@
   </Container>
 </template>
 <script>
-import Container from './Container.vue'
+import Container from '../components/Container.vue'
+import Cards from '../components/Cards.vue'
 export default {
   data () {
     return {
@@ -43,7 +49,8 @@ export default {
     }
   },
   components: {
-    Container
+    Container,
+    Cards
   },
   filters: {
     hasBackground (v) {

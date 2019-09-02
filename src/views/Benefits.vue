@@ -12,12 +12,12 @@
     >
       <div class="c-content main-content">
         <h4 class="c-main">Premium</h4>
-        <h6>pre·​mi·​um</h6>  
+        <h6>pre·mi·um</h6>
         <p class="p-sm">An exceptional quality or amount also : higher-priced</p>
       </div>
       <div class="c-content sub-content">
         <h4 class="c-main">Stylus</h4>
-        <h6>sty·​lus</h6>
+        <h6>sty·lus</h6>
         <p class="p-sm">A pen-shaped pointing device used for entering data (such as positional information from a graphics tablet) into a computer</p>
       </div>
     </Cards>
@@ -27,12 +27,12 @@
     >
       <div class="c-content main-content">
         <h4 class="c-main">Template</h4>
-        <h6>tem·​plate</h6>
+        <h6>tem·plate</h6>
         <p class="p-sm">A gauge, pattern, or mold (such as a thin plate or board) used as a guide to the form of a piece being made</p>
       </div>
       <div class="c-content sub-content">
         <h4 class="c-main">Random</h4>
-        <h6>ran·​dom</h6>
+        <h6>ran·dom</h6>
         <p class="p-sm">Without definite aim, direction, rule, or method</p>
       </div>
     </Cards>
@@ -42,12 +42,12 @@
     >
       <div class="c-content main-content">
         <h4 class="c-main">Random</h4>
-        <h6>ran·​dom</h6>
+        <h6>ran·dom</h6>
         <p class="p-sm">Without definite aim, direction, rule, or method</p>
       </div>
       <div class="c-content sub-content">
         <h4 class="c-main">Premium</h4>
-        <h6>pre·​mi·​um</h6>  
+        <h6>pre·mi·um</h6>
         <p class="p-sm">An exceptional quality or amount also : higher-priced</p>
       </div>
     </Cards>
@@ -99,7 +99,7 @@ export default {
   }
 }
 @media (min-width: 992px)  {
-  
+
 }
 @media (min-width: 1200px) {
 

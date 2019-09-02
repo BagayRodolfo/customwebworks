@@ -25,10 +25,10 @@
 
 <script>
 import Alert from '../components/Alert.vue'
-import Banner from '../components/Banner.vue'
-import Features from '../components/Features.vue'
-import TalkToUsBar from '../components/TalkToUsBar.vue'
-import Benefits from '../components/Benefits.vue'
+import Banner from './Banner.vue'
+import Features from './Features.vue'
+import TalkToUsBar from './TalkToUsBar.vue'
+import Benefits from './Benefits.vue'
 import Tabs from '../components/Tabs.vue'
 export default {
   data () {
